@@ -2,14 +2,21 @@ $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
 $nav-background: #fff;
-$nav-font-color: #0c0c0c;
-$link-hover-color: #f8b500;
+$nav-font-color: #181818;
+$second-color: #53565B;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body{
   font-family: 'Poppins'
 }
+
+
+#AGWPicon{
+    width: 50%;
+    height: auto;
+}
+
 
 .navigation {
   height: $nav-height;
@@ -63,7 +70,7 @@ nav {
            height: 5px;
            content: "";
            position: absolute;
-           background-color: $link-hover-color;
+           background-color: $second-color;
            width: 0%;
            bottom: 0px;
         }
@@ -150,7 +157,7 @@ nav {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: $link-hover-color;
+    background: $second-color;
     position: absolute;
     display: block;
     content: '';

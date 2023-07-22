@@ -4,8 +4,9 @@ body {
   font-family: "Poppins";
 }
 
-#icon-nav {
-  color:;
+#AGWPicon {
+  width: 50%;
+  height: auto;
 }
 
 .navigation {
@@ -28,7 +29,7 @@ body {
 }
 .brand a,
 .brand a:visited {
-  color: #0c0c0c;
+  color: #181818;
   text-decoration: none;
 }
 
@@ -49,7 +50,7 @@ nav ul li a {
   padding: 10px 20px 0 20px;
   line-height: 50px;
   background: #fff;
-  color: #0c0c0c;
+  color: #181818;
   text-decoration: none;
 }
 nav ul li a::before {
@@ -57,7 +58,7 @@ nav ul li a::before {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #f8b500;
+  background-color: #53565B;
   width: 0%;
   bottom: 0px;
 }
@@ -135,7 +136,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #181818;
+  background: #53565B;
   position: absolute;
   display: block;
   content: "";
