@@ -52,6 +52,7 @@ nav ul li a {
   background: #fff;
   color: #181818;
   text-decoration: none;
+  font-size: large;
 }
 nav ul li a::before {
   transition: 300ms;
@@ -95,6 +96,27 @@ nav ul li ul li a {
 }
 
 @media only screen and (max-width: 799px) {
+  .Start-text {
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+  }
+  .Kontakt {
+    border-radius: 4%;
+  }
+  .Singular-Contact {
+    padding-bottom: 2rem;
+  }
+  .Kontakt h1 {
+    padding-left: 1.5rem;
+    font-size: xx-large;
+  }
+  .Kontakt p {
+    padding-left: 0.5rem;
+  }
+  .Kontakt ul {
+    padding-left: 1.5rem;
+    list-style-type: none;
+  }
   .nav-mobile {
     display: block;
   }
@@ -125,7 +147,7 @@ nav ul li ul li a {
 #nav-toggle {
   position: absolute;
   left: 18px;
-  top: 22px;
+  top: 29px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
@@ -164,6 +186,31 @@ nav ul li ul li a {
 @media screen and (min-width: 799px) {
   .nav-list {
     display: block !important;
+  }
+  .Start-text {
+    width: 50%;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+  }
+  .main-page-content {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+  }
+  .Kontakt {
+    padding-top: 2.5rem;
+  }
+  .Singular-Contact {
+    flex-basis: 50%;
+    padding-bottom: 2rem;
+  }
+  .Kontakt p {
+    padding-left: 0.5rem;
+  }
+  .Kontakt ul {
+    padding-left: 1.5rem;
+    list-style-type: none;
   }
 }
 
