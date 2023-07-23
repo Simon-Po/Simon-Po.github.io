@@ -17,17 +17,20 @@ body{
   padding-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1fr 1fr;
 }
 
 #ueber-content p {
   grid-row: 1;
+  grid-column: 1 / span 2;
   text-align: justify;
 }
 
-#ueber-content img {
-  
+#ueber-content label {
+  font-size: larger;
+  padding-top: 1rem;
 }
+
 
 #horst-img {
   grid-row: 2;
@@ -35,9 +38,22 @@ body{
   width: 25rem;
 }
 
+
+#horst-label {
+  grid-row: 3;
+}
+
+
+#reiner-label {
+  grid-row: 3;
+  text-align: right;
+  padding-right: 4rem;
+}
+
 #reiner-img{
   grid-row: 2;
   width: 28rem;
+  text-align: right;
 
 }
 
@@ -270,12 +286,28 @@ nav {
     
   }
 
-  .main-page-content {
+  
+  .main-page-content-home {
+    max-width: $content-width;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 2rem;
+    
+  }
+  .main-page-content-ueber {
     max-width: $content-width;
     position: relative;
     margin: 0 auto;
     display: flex;
     padding-left: 1.5rem;
+  }
+  .main-page-content {
+    max-width: $content-width;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    
   }
 
   .Kontakt{

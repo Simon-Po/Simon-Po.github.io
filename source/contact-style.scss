@@ -9,22 +9,24 @@ $second-color: #53565B;
 
 
 .Contact-Main-Body {
-    padding-top: 4rem;
+    font-size: large;
+    padding-top: 2rem;
     max-width: $content-width;
     position: relative;
     margin: 0 auto;
     display: grid;
-    grid-template-columns:1fr 2fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 1.5rem;
+    grid-template-columns:1.6fr 1fr ;
+    grid-template-rows: 0.3fr  1fr;
 
 }
 
 .Contact-Main-Body h1 {
-    grid-column: 2;
-    text-align: center;
+    grid-column: 1;
+    text-align: left;
 }
 
-.Contact-Main-Body form{
+.Contact-Main-Body section{
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 1;
 }
