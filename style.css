@@ -4,8 +4,36 @@ body {
   font-family: "Poppins";
 }
 
+#ueber-content {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#ueber-content p {
+  grid-row: 1;
+  text-align: justify;
+}
+
+#horst-img {
+  grid-row: 2;
+  filter: grayscale(100%);
+  width: 25rem;
+}
+
+#reiner-img {
+  grid-row: 2;
+  width: 28rem;
+}
+
+#text-papa {
+  padding-left: 1.5rem;
+  font-size: xx-large;
+}
+
 #AGWPicon {
-  width: 48%;
+  width: 80%;
   height: auto;
 }
 
@@ -197,6 +225,7 @@ nav ul li ul li a {
     position: relative;
     margin: 0 auto;
     display: flex;
+    padding-left: 1.5rem;
   }
   .Kontakt {
     padding-top: 2.5rem;
