@@ -1,0 +1,30 @@
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: #fff;
+$main-color: #181818;
+$nav-font-color: $main-color;
+$second-color: #53565B;
+
+
+
+.Contact-Main-Body {
+    padding-top: 4rem;
+    max-width: $content-width;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.Contact-Main-Body h1 {
+    grid-column: 2;
+    text-align: center;
+}
+
+.Contact-Main-Body form{
+    grid-row: 2;
+    grid-column: 2;
+}
