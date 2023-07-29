@@ -20,4 +20,14 @@
   grid-column: 1;
 }
 
+@media only screen and (max-width: 799px) {
+  .Contact-Main-Body section {
+    grid-row: 2;
+    grid-column: 1/-1;
+  }
+  .Contact-Main-Body {
+    font-size: larger;
+  }
+}
+
 /*# sourceMappingURL=contact-style.css.map */

@@ -4,65 +4,38 @@ $nav-height: 70px;
 $nav-background: #fff;
 $main-color: #181818;
 $nav-font-color: $main-color;
-$second-color: #53565B;
+$second-color: #53565b;
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
-body{
-  font-family: 'Poppins';
-  
+body {
+  font-family: "Poppins";
 }
 
-#wehr-home-img{
-  padding-top: 2rem;
+#wehr-home-img {
   grid-row: 2;
   padding-left: 1.5rem;
-  overflow: hidden;
+  // overflow: hidden;
   height: 60%;
   width: 95%;
+}
 
+#wehr-home-img label {
+  color: $main-color;
 }
 
 #wehr-home-img img {
-  
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 100% 0%;
 }
 
-#ueber-content {
-
-  padding-top: 4rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.7fr 1fr 1fr;
-}
-
-#ueber-content p {
-  font-size: large;
-  grid-row: 1;
-  grid-column: 1 / span 2;
-  text-align: justify;
-}
-
-#ueber-content label {
-  font-size: larger;
-  padding-top: 1rem;
-}
-
-
 #horst-img {
   grid-row: 2;
   filter: grayscale(100%);
   width: 25rem;
 }
-
-
-#horst-label {
-  grid-row: 3;
-}
-
 
 #reiner-label {
   grid-row: 3;
@@ -71,11 +44,10 @@ body{
   padding-right: 4rem;
 }
 
-#reiner-img{
+#reiner-img {
   grid-row: 2;
   width: 28rem;
   text-align: right;
-
 }
 
 #text-papa {
@@ -83,12 +55,10 @@ body{
   font-size: xx-large;
 }
 
-
-#AGWPicon{
-    width: 80%;
-    height: auto;
+#AGWPicon {
+  width: 80%;
+  height: auto;
 }
-
 
 .navigation {
   height: $nav-height;
@@ -102,14 +72,13 @@ body{
 
 .brand {
   position: absolute;
-  padding-left: 20px;
+  padding-left: 1.5rem;
   float: left;
   line-height: $nav-height;
   text-transform: uppercase;
   font-size: 1.4em;
-  
-  &:hover{
-    
+
+  &:hover {
   }
 
   a,
@@ -122,9 +91,9 @@ body{
 nav {
   float: right;
   ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     li {
       float: left;
       position: relative;
@@ -136,24 +105,23 @@ nav {
         color: $nav-font-color;
         text-decoration: none;
         font-size: large;
-        
-        
-         &::before {
-           transition: 300ms;
-           height: 5px;
-           content: "";
-           position: absolute;
-           background-color: $second-color;
-           width: 0%;
-           bottom: 0px;
+
+        &::before {
+          transition: 300ms;
+          height: 5px;
+          content: "";
+          position: absolute;
+          background-color: $second-color;
+          width: 0%;
+          bottom: 0px;
         }
 
-        &:hover::before{
+        &:hover::before {
           width: 70%;
         }
         &:not(:only-child):after {
           padding-left: 4px;
-          content: ' ▾';
+          content: " ▾";
         }
       } // Dropdown list
       ul li {
@@ -166,7 +134,6 @@ nav {
     }
   }
 }
-
 
 .nav-dropdown {
   display: none;
@@ -185,25 +152,75 @@ nav {
   width: $nav-height;
 }
 
+@media only screen and (max-width: $breakpoint) and (min-width: 281px) {
+  .img-container {
+    width: 100%;
+    text-align: center;
+  }
 
+  #reiner-img {
+    grid-row: 2;
+    width: 20rem;
+    text-align: right;
+  }
+  #horst-img {
+    grid-row: 2;
+    filter: grayscale(100%);
+    width: 20rem;
+  }
+  #ueber-content {
+  }
+  #reiner-label {
+    text-align: left;
+    padding-left: 0.7rem;
+  }
 
-@media only screen and (max-width: $breakpoint) {
+  #ueber-content p {
+    font-size: large;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: justify;
+  }
 
+  #ueber-content label {
+    font-size: larger;
+    padding-top: 1rem;
+  }
+
+  .main-page-content-ueber {
+    max-width: $content-width;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .brand {
+    padding-left: 0.7rem;
+  }
+  #wehr-home-img {
+    padding-left: 0.7rem;
+  }
+
+  #text-papa {
+    font-size: x-large;
+    padding-left: 0.7rem;
+  }
   .Start-text {
     padding: 1.5rem;
     padding-top: 2.5rem;
   }
 
   .Start-text h1 {
-    
   }
 
-  .Kontakt{
-    
+  .Kontakt {
     border-radius: 4%;
   }
 
-  .Singular-Contact{
+  .Singular-Contact {
     padding-bottom: 2rem;
   }
 
@@ -220,24 +237,23 @@ nav {
     list-style-type: none;
   }
 
-
   .nav-mobile {
     display: block;
   }
   nav {
-      width: 100%;
-      padding: $nav-height 0 15px;
+    width: 100%;
+    padding: $nav-height 0 15px;
     ul {
       display: none;
-      
-      li{
+
+      li {
         float: none;
-        
+
         a {
           padding: 15px;
           line-height: 20px;
-          
-          &:hover::before{
+
+          &:hover::before {
             width: 20%;
           }
         }
@@ -249,7 +265,116 @@ nav {
   }
   .nav-dropdown {
     position: static;
-    
+  }
+}
+
+@media only screen and (max-width: 281px) {
+  img-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  #reiner-img {
+    grid-row: 2;
+    width: 20rem;
+    text-align: right;
+  }
+  #horst-img {
+    grid-row: 2;
+    filter: grayscale(100%);
+    width: 20rem;
+  }
+  #ueber-content {
+  }
+  #reiner-label {
+    text-align: left;
+    padding-left: 0.7rem;
+  }
+
+  #ueber-content p {
+    font-size: large;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: justify;
+  }
+
+  #ueber-content label {
+    font-size: larger;
+    padding-top: 1rem;
+  }
+
+  .brand {
+    padding-left: 0.7rem;
+  }
+  #wehr-home-img {
+    padding-left: 0.7rem;
+  }
+
+  #wehr-home-img label {
+    font-size: small;
+  }
+
+  #text-papa {
+    font-size: large;
+    padding-left: 0.7rem;
+  }
+  .Start-text {
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .Start-text h1 {
+  }
+
+  .Kontakt {
+    border-radius: 4%;
+  }
+
+  .Singular-Contact {
+    padding-bottom: 2rem;
+  }
+
+  .Kontakt h1 {
+    padding-left: 1.5rem;
+    font-size: xx-large;
+  }
+  .Kontakt p {
+    padding-left: 0.5rem;
+  }
+
+  .Kontakt ul {
+    padding-left: 1.5rem;
+    list-style-type: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: $nav-height 0 15px;
+    ul {
+      display: none;
+
+      li {
+        float: none;
+
+        a {
+          padding: 15px;
+          line-height: 20px;
+
+          &:hover::before {
+            width: 20%;
+          }
+        }
+        ul li a {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .nav-dropdown {
+    position: static;
   }
 }
 
@@ -269,7 +394,7 @@ nav {
     background: $main-color;
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     transition: all 300ms ease-in-out;
   }
   span:before {
@@ -294,6 +419,29 @@ nav {
 }
 
 @media screen and (min-width: $breakpoint) {
+  .img-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ueber-content {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 0.1fr;
+  }
+
+  #ueber-content p {
+    font-size: large;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: justify;
+  }
+
+  #ueber-content label {
+    font-size: larger;
+  }
+
   .nav-list {
     display: block !important;
   }
@@ -304,9 +452,7 @@ nav {
   }
 
   .Start-text h1 {
-    
   }
-
 
   .main-page-content-home {
     max-width: $content-width;
@@ -314,7 +460,6 @@ nav {
     margin: 0 auto;
     display: grid;
     padding-top: 2rem;
-    
   }
   .main-page-content-ueber {
     max-width: $content-width;
@@ -328,20 +473,17 @@ nav {
     position: relative;
     margin: 0 auto;
     display: flex;
-    
   }
 
-  .Kontakt{
+  .Kontakt {
     padding-top: 2.5rem;
-    
   }
 
-  .Singular-Contact{
+  .Singular-Contact {
     flex-basis: 50%;
     padding-bottom: 2rem;
   }
 
-  
   .Kontakt p {
     padding-left: 0.5rem;
   }
